@@ -417,7 +417,7 @@ h2 {
 
 .pricing__price {
     font-size: 2.875rem;
-    font-family: var(--font-open-sans);
+    font-family: var(--font-opensans);
     font-weight: 300;
     margin-top: 25px;
     color: var(--accent-color);
@@ -552,7 +552,7 @@ h2 {
     width: 50%;
 }
 
-.form__place{
+.form__place {
     display: flex;
     flex-direction: column;
 }
@@ -632,4 +632,38 @@ h2 {
     background-color: var(--color-primary);
     color: var(--color-white)
 
+}
+
+.footer {
+    height: 89px;
+    box-shadow: 0 -5px 40px #00000029;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__information {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__information .logo {
+    text-align: left;
+    font-size: 1.625rem;
+    color: var(--color-primary);
+    margin-bottom: 6px;
+}
+
+.footer__copy {
+    font-size: 0.6875rem;
+    color: var(--color-grey);
+    margin-bottom: 17px;
+}
+
+.footer__media a:first-of-type {
+    margin-right: 25px;
 }
