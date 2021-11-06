@@ -223,7 +223,6 @@ h2 {
 .benefits {
     padding: 100px 0;
     background-color: var(--color-light-grey);
-
 }
 
 .benefits-container {
@@ -306,7 +305,7 @@ h2 {
     transform: rotate(45deg);
 }
 
-.benefits-row--phone{
+.benefits-row--phone {
     --accent-color: var(--color-primary);
     flex-direction: row-reverse;
     padding: 0 20px 0 70px;
@@ -332,3 +331,176 @@ h2 {
 .benefits-row--phone .benefits__textarea {
     margin: 70px 0;
 }
+
+.benefits-double {
+    display: flex;
+    --accent-color: var(--color-green);
+
+
+}
+
+.benefits__double > div {
+    margin-bottom: 0;
+
+}
+
+.benefits-row--solo {
+    max-width: 620px;
+
+}
+
+.benefits-row--solo .benefits__textarea {
+    max-width: none;
+    margin: 70px 35px;
+}
+
+.benefits-row--image {
+    max-width: 440px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-color);
+    border: none;
+    margin-left: 60px;
+}
+
+.benefits-row--image img {
+    width: 295px;
+    height: auto;
+    margin-top: 55px;
+}
+
+.pricing {
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.pricing-title {
+    text-align: center;
+    color: var(--color-black);
+    font-size: 2rem;
+    font-family: var(--font-raleway);
+}
+
+.pricing__box {
+    width: 370px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--accent-color);
+}
+
+.pricing__details {
+    margin-top: 34px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.pricing__type {
+    font-size: 1.25rem;
+    font-family: var(--font-raleway);
+    font-weight: 700;
+}
+
+.pricing__price {
+    font-size: 2.875rem;
+    font-family: var(--font-open-sans);
+    font-weight: 300;
+    margin-top: 25px;
+    color: var(--accent-color);
+}
+
+.pricing__limited {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.75rem;
+    font-family: var(--font-raleway);
+    font-weight: 700;
+}
+
+.pricing__items {
+    text-align: center;
+}
+
+.pricing__item {
+    font-size: 0.875rem;
+    margin-bottom: 20px;
+}
+
+.pricing__item::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url("../assets/Ckechmark-1.svg");
+}
+
+.pricing__item--not::before {
+    background-image: url("../assets/Close.svg");
+}
+
+.pricing__box .btn {
+    position: relative;
+    bottom: -25px;
+    font-size: 0.8125rem;
+    background-color: var(--accent-color);
+}
+
+.pricing__box--basic {
+    --accent-color: var(--color-redish);
+}
+
+.pricing__box--basic .pricing__price {
+    margin-bottom: 30px;
+}
+
+.pricing__box--professional {
+    --accent-color: var(--color-primary);
+    width: 400px;
+    margin: 0 40px;
+    box-shadow: 5px 1px 27px var(--color-primary-shadow);
+}
+
+.pricing__box--professional .pricing__type {
+    font-size: 1.3125rem;
+}
+
+.pricing__box--professional .pricing__item {
+    margin-bottom: 25px;
+}
+
+.pricing__box--premium {
+    --accent-color: var(--color-green);
+}
+
+.btn {
+    text-decoration: none;
+    align-self: center;
+    font-size: 0.8125rem;
+    padding: 16px 57px;
+    border-radius: 23px;
+    color: var(--color-white)
+}
+
+
+
+
+
+
+
+
+
