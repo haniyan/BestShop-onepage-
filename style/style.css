@@ -7,17 +7,131 @@
     --color-grey: #A5A5A5;
     --color-light-grey: #F7F7F7;
     --color-white: #FFFFFF;
-    --open-sans: 'Open Sans', sans-serif;
-    --raleway: 'Raleway', sans-serif;
+    --font-opensans: 'Open Sans', sans-serif;
+    --font-raleway: 'Raleway', sans-serif;
+    --button-radius: 35px;
 
 }
 
-header{
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-opensans);
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 1352px;
+    margin: 0 auto;
+}
+
+header {
+    height: 70px;
+    background: var(--color-white) 0 0 no-repeat padding-box;
+    box-shadow: 0 3px 6px #00000029;
+    opacity: 1;
+
+}
+
+.bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%
+
+
+}
+
+.bar-logo__name {
+    /*margin: 16px 17px auto 136px;*/
+    text-align: left;
+    font: normal normal 300 2rem var(--font-raleway);
+    color: var(--color-primary);
+    letter-spacing: 0;
+}
+
+.bar.nav {
+
+}
+
+.bar-nav__menu {
+    display: flex;
+    /*justify-content: flex-end;*/
+    /*align-items: center;*/
+    /*margin-right: 136px;*/
+    /*margin-bottom: 27px;*/
+
+}
+
+.menu__link {
+    text-transform: uppercase;
+    color: var(--color-grey);
+    font-weight: 700;
+    font-size: 0.6875rem;
+    padding: 28px 18px 22px;
+    border-bottom: 4px solid transparent;
+    letter-spacing: 0.1875rem;
+
+}
+
+.menu__link:hover {
+    color: var(--color-black);
+    border-color: var(--color-primary);
+}
+
+.menu__item {
+    padding: 0 26px;
+}
+
+.menu__item:last-child {
+    padding-right: 0;
+}
+
+.opening-section {
     width: 100vw;
-
+    height: 712px;
+    margin-top: 130px;
+    background-color: var(--color-white);
+    text-align: center;
 }
 
-.container{
-   width: 1352px;
+.opening-section-title {
+    font-family: var(--font-raleway);
+    font-size: 3.0625rem;
+    letter-spacing: 0;
+    color: var(--color-black);
+    margin-top: 0;
+}
 
+.opening-section-description {
+    margin-top: 20px;
+    color: var(--color-black);
+}
+
+.opening-section-image {
+    width: 100%;
+    height: auto;
+}
+
+.opening-section-btn {
+    display: inline-block;
+    margin-top: 38px;
+    color: var(--color-white);
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 22px 157px 23px 157px;
+    background-color: var(--color-primary);
+    box-shadow: 5px 10px 14px #07ACE629;
+    border-radius: 40px;
 }
