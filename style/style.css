@@ -36,6 +36,7 @@ ul {
 }
 
 header {
+    width: 100vw;
     height: 70px;
     background: var(--color-white) 0 0 no-repeat padding-box;
     box-shadow: 0 3px 6px #00000029;
@@ -66,11 +67,6 @@ header {
 
 .bar-nav__menu {
     display: flex;
-    /*justify-content: flex-end;*/
-    /*align-items: center;*/
-    /*margin-right: 136px;*/
-    /*margin-bottom: 27px;*/
-
 }
 
 .menu__link {
@@ -81,7 +77,6 @@ header {
     padding: 28px 18px 22px;
     border-bottom: 4px solid transparent;
     letter-spacing: 0.1875rem;
-
 }
 
 .menu__link:hover {
@@ -134,6 +129,13 @@ header {
     background-color: var(--color-primary);
     box-shadow: 5px 10px 14px #07ACE629;
     border-radius: 40px;
+    transition: 2s;
+}
+
+.opening-section-btn:hover{
+    color: var(--color-primary);
+    background-color: var(--color-white);
+    border: 2px solid var(--color-primary);
 }
 
 .statistics {
@@ -401,6 +403,12 @@ h2 {
     flex-direction: column;
     align-items: center;
     border: 1px solid var(--accent-color);
+    transition: 0.5s;
+}
+
+.pricing__box:hover{
+    border: 3px solid var(--accent-color);
+    box-shadow: 3px 1px 27px var(--accent-color);
 }
 
 .pricing__details {
@@ -458,6 +466,13 @@ h2 {
     bottom: -25px;
     font-size: 0.8125rem;
     background-color: var(--accent-color);
+    transition: 0.5s;
+}
+
+.pricing__box .btn:hover{
+    opacity: 0.9;
+    font-size: 1rem;
+
 }
 
 .pricing__box--basic {
