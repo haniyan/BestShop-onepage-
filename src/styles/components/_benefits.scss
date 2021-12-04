@@ -22,7 +22,7 @@
 }
 
 .benefits-row--notebook {
-  --accent-color: $color-redish;
+  //--accent-color: $color-redish;
 }
 
 .benefits__textarea {
@@ -34,7 +34,7 @@
   content: "";
   width: 332px;
   height: 4px;
-  background-color: var(--accent-color);
+  //background-color: var(--accent-color);
   display: block;
   margin-top: 50px;
 }
@@ -75,7 +75,7 @@
   content: "";
   width: 180px;
   height: 180px;
-  background-color: var(--accent-color);
+  //background-color: var(--accent-color);
   display: block;
   border-radius: 40px;
   position: absolute;
@@ -85,7 +85,7 @@
 }
 
 .benefits-row--phone {
-  --accent-color: var(--color-primary);
+  //--accent-color: var(--color-primary);
   flex-direction: row-reverse;
   padding: 0 20px 0 70px;
 }
@@ -94,7 +94,7 @@
   content: "";
   width: 320px;
   height: 320px;
-  background-color: var(--accent-color);
+  //background-color: var(--accent-color);
   display: block;
   border-radius: 50%;
   position: absolute;
@@ -113,7 +113,7 @@
 
 .benefits-double {
   display: flex;
-  --accent-color: var(--color-green);
+  //--accent-color: var(--color-green);
 
 
 }
@@ -139,7 +139,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--accent-color);
+  //background-color: var(--accent-color);
   border: none;
   margin-left: 60px;
 }

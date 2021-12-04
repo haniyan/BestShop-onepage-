@@ -18,13 +18,13 @@
 .footer__information .logo {
     text-align: left;
     font-size: 1.625rem;
-    color: var(--color-primary);
+    color: $color-primary;
     margin-bottom: 6px;
 }
 
 .footer__copy {
     font-size: 0.6875rem;
-    color: var(--color-grey);
+    color: $color-grey;
     margin-bottom: 17px;
 }
 
