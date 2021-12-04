@@ -1,0 +1,33 @@
+.footer {
+    height: 89px;
+    box-shadow: 0 -5px 40px #00000029;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__information {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__information .logo {
+    text-align: left;
+    font-size: 1.625rem;
+    color: var(--color-primary);
+    margin-bottom: 6px;
+}
+
+.footer__copy {
+    font-size: 0.6875rem;
+    color: var(--color-grey);
+    margin-bottom: 17px;
+}
+
+.footer__media a:first-of-type {
+    margin-right: 25px;
+}

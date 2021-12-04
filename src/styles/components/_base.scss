@@ -1,0 +1,10 @@
+body {
+  font-family: var(--font-opensans);
+
+}
+
+.container {
+  @include mobile;
+  width: 1352px;
+  margin: 0 auto;
+}
