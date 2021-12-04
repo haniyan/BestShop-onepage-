@@ -13,8 +13,8 @@
 h2 {
   text-align: center;
   font-size: 2.25rem;
-  font-family: var(--font-raleway);
-  color: var(--color-black);
+  font-family: $font-raleway;
+  color: $color-black;
 
 }
 
@@ -25,7 +25,7 @@ h2 {
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-  font-family: var(--font-raleway);
+  font-family: $font-raleway;
 }
 
 .statistics__circle {
@@ -42,7 +42,7 @@ h2 {
 }
 
 .statistics-column:nth-child(1) .statistics__circle {
-  background-color: var(--color-redish);
+  background-color: $color-redish;
 }
 
 .statistics-column:nth-child(1) .statistics__img {
@@ -51,7 +51,7 @@ h2 {
 }
 
 .statistics-column:nth-child(2) .statistics__circle {
-  background-color: var(--color-primary);
+  background-color: $color-primary;
 }
 
 .statistics-column:nth-child(2) .statistics__img {
@@ -60,7 +60,7 @@ h2 {
 }
 
 .statistics-column:nth-child(3) .statistics__circle {
-  background-color: var(--color-green);
+  background-color: $color-green;
 }
 
 .statistics-column:nth-child(3) .statistics__img {
@@ -73,12 +73,12 @@ h2 {
   font-size: 1.25rem;
   font-weight: bold;
   letter-spacing: 0.3725rem;
-  color: var(--color-black);
+  color: $color-black;
   margin-top: 14px;
 }
 
 .statistics__description {
-  color: var(--color-grey);
+  color: $color-grey;
   font-size: 1.0625rem;
   margin-top: 19px;
 }

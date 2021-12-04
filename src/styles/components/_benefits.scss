@@ -1,7 +1,7 @@
 
 .benefits {
   padding: 100px 0;
-  background-color: var(--color-light-grey);
+  background-color: $color-light-grey;
 }
 
 .benefits-container {
@@ -12,7 +12,7 @@
 .benefits-row {
   width: 1124px;
   height: 370px;
-  background-color: var(--color-white);
+  background-color: $color-white;
   border: 1px solid #E8E9ED;
   display: flex;
   justify-content: space-between;
@@ -22,7 +22,7 @@
 }
 
 .benefits-row--notebook {
-  --accent-color: var(--color-redish);
+  --accent-color: $color-redish;
 }
 
 .benefits__textarea {
@@ -41,9 +41,9 @@
 
 .benefits__title {
   text-align: left;
-  font-family: var(--font-raleway);
+  font-family: $font-raleway;
   font-size: 2rem;
-  color: var(--color-black);
+  color: $color-black;
   margin-bottom: 30px;
 }
 

@@ -1,7 +1,7 @@
 header {
   width: 100vw;
   height: 70px;
-  background: var(--color-white) 0 0 no-repeat padding-box;
+  background: $color-white 0 0 no-repeat padding-box;
   box-shadow: 0 3px 6px #00000029;
   opacity: 1;
 
@@ -19,14 +19,11 @@ header {
 .bar-logo__name {
   /*margin: 16px 17px auto 136px;*/
   text-align: left;
-  font: normal normal 300 2rem var(--font-raleway);
-  color: var(--color-primary);
+  font: normal normal 300 2rem $font-raleway;
+  color: $color-primary;
   letter-spacing: 0;
 }
 
-.bar.nav {
-
-}
 
 .bar-nav__menu {
   display: flex;
@@ -34,7 +31,7 @@ header {
 
 .menu__link {
   text-transform: uppercase;
-  color: var(--color-grey);
+  color: $color-grey;
   font-weight: 700;
   font-size: 0.6875rem;
   padding: 28px 18px 22px;
@@ -43,8 +40,8 @@ header {
 }
 
 .menu__link:hover {
-  color: var(--color-black);
-  border-color: var(--color-primary);
+  color: $color-black;
+  border-color: $color-primary;
 }
 
 .menu__item {

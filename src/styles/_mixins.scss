@@ -7,8 +7,7 @@
 }
 
 @mixin buttons{
-  @content;
-  button-radius: 35px;
+  border-radius: 35px;
 }
 
 

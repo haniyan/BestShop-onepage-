@@ -177,7 +177,7 @@ table {
 }
 
 body {
-  font-family: var(--font-opensans);
+  font-family: "Open Sans", sans-serif;
 }
 
 .container {
@@ -193,7 +193,7 @@ body {
 
 .benefits {
   padding: 100px 0;
-  background-color: var(--color-light-grey);
+  background-color: #F7F7F7;
 }
 
 .benefits-container {
@@ -203,7 +203,7 @@ body {
 .benefits-row {
   width: 1124px;
   height: 370px;
-  background-color: var(--color-white);
+  background-color: #FFFFFF;
   border: 1px solid #E8E9ED;
   display: flex;
   justify-content: space-between;
@@ -213,7 +213,7 @@ body {
 }
 
 .benefits-row--notebook {
-  --accent-color: var(--color-redish);
+  --accent-color: $color-redish;
 }
 
 .benefits__textarea {
@@ -232,9 +232,9 @@ body {
 
 .benefits__title {
   text-align: left;
-  font-family: var(--font-raleway);
+  font-family: "Raleway", sans-serif;
   font-size: 2rem;
-  color: var(--color-black);
+  color: #000000;
   margin-bottom: 30px;
 }
 
@@ -354,15 +354,15 @@ body {
   text-align: left;
   font-size: 3.0625rem;
   line-height: 3.6875rem;
-  font-family: var(--font-raleway);
-  color: var(--color-black);
+  font-family: "Raleway", sans-serif;
+  color: #000000;
   margin-bottom: 22px;
 }
 
 .contact-description {
   text-align: left;
   font-size: 1rem;
-  color: var(--color-black);
+  color: #000000;
   line-height: 1.375rem;
   margin: 22px 0 42px;
 }
@@ -402,7 +402,7 @@ body {
 .form__label {
   font-weight: bold;
   text-transform: uppercase;
-  color: var(--color-primary);
+  color: #08A6E4;
   line-height: 0.9rem;
   letter-spacing: 3px;
   font-size: 0.6875rem;
@@ -410,7 +410,7 @@ body {
 
 .form__input {
   border: none;
-  border-bottom: 1px solid var(--color-grey);
+  border-bottom: 1px solid #A5A5A5;
   background-color: transparent;
   line-height: 2.625rem;
 }
@@ -442,13 +442,13 @@ body {
   left: 0;
   height: 25px;
   width: 25px;
-  background-color: var(--color-white);
-  border: 1px solid var(--color-grey);
+  background-color: #FFFFFF;
+  border: 1px solid #A5A5A5;
   border-radius: 4px;
 }
 
 .form__checkbox input:checked ~ .checkbox {
-  background-image: url(../assets/Checkmark.svg);
+  background-image: url(../../../public/assets/Checkmark.svg);
   background-position: center;
   background-size: 50%;
   background-repeat: no-repeat;
@@ -457,7 +457,7 @@ body {
 .form__checkbox .consent__text {
   margin: 0 10px;
   font-size: 0.75rem;
-  color: var(--color-grey);
+  color: #A5A5A5;
   line-height: 17px;
 }
 
@@ -467,8 +467,8 @@ body {
   align-self: flex-end;
   margin-top: 20px;
   border: none;
-  background-color: var(--color-primary);
-  color: var(--color-white);
+  background-color: #08A6E4;
+  color: #FFFFFF;
 }
 
 .footer {
@@ -508,7 +508,7 @@ body {
 header {
   width: 100vw;
   height: 70px;
-  background: var(--color-white) 0 0 no-repeat padding-box;
+  background: #FFFFFF 0 0 no-repeat padding-box;
   box-shadow: 0 3px 6px #00000029;
   opacity: 1;
 }
@@ -523,8 +523,8 @@ header {
 .bar-logo__name {
   /*margin: 16px 17px auto 136px;*/
   text-align: left;
-  font: normal normal 300 2rem var(--font-raleway);
-  color: var(--color-primary);
+  font: normal normal 300 2rem "Raleway", sans-serif;
+  color: #08A6E4;
   letter-spacing: 0;
 }
 
@@ -534,7 +534,7 @@ header {
 
 .menu__link {
   text-transform: uppercase;
-  color: var(--color-grey);
+  color: #A5A5A5;
   font-weight: 700;
   font-size: 0.6875rem;
   padding: 28px 18px 22px;
@@ -543,8 +543,8 @@ header {
 }
 
 .menu__link:hover {
-  color: var(--color-black);
-  border-color: var(--color-primary);
+  color: #000000;
+  border-color: #08A6E4;
 }
 
 .menu__item {
@@ -559,21 +559,21 @@ header {
   width: 100vw;
   height: 712px;
   margin-top: 130px;
-  background-color: var(--color-white);
+  background-color: #FFFFFF;
   text-align: center;
 }
 
 .opening-section-title {
-  font-family: var(--font-raleway);
+  font-family: "Raleway", sans-serif;
   font-size: 3.0625rem;
   letter-spacing: 0;
-  color: var(--color-black);
+  color: #000000;
   margin-top: 0;
 }
 
 .opening-section-description {
   margin-top: 20px;
-  color: var(--color-black);
+  color: #000000;
 }
 
 .opening-section-image {
@@ -584,21 +584,21 @@ header {
 .opening-section-btn {
   display: inline-block;
   margin-top: 38px;
-  color: var(--color-white);
+  color: #FFFFFF;
   font-size: 1rem;
   font-weight: bold;
   text-align: center;
   padding: 22px 157px 23px 157px;
-  background-color: var(--color-primary);
+  background-color: #08A6E4;
   box-shadow: 5px 10px 14px #07ACE629;
   border-radius: 40px;
   transition: 2s;
 }
 
 .opening-section-btn:hover {
-  color: var(--color-primary);
-  background-color: var(--color-white);
-  border: 2px solid var(--color-primary);
+  color: #08A6E4;
+  background-color: #FFFFFF;
+  border: 2px solid #08A6E4;
 }
 
 .pricing {
@@ -619,9 +619,9 @@ header {
 
 .pricing-title {
   text-align: center;
-  color: var(--color-black);
+  color: #000000;
   font-size: 2rem;
-  font-family: var(--font-raleway);
+  font-family: "Raleway", sans-serif;
 }
 
 .pricing__box {
@@ -647,13 +647,13 @@ header {
 
 .pricing__type {
   font-size: 1.25rem;
-  font-family: var(--font-raleway);
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
 }
 
 .pricing__price {
   font-size: 2.875rem;
-  font-family: var(--font-opensans);
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   margin-top: 25px;
   color: var(--accent-color);
@@ -663,7 +663,7 @@ header {
   text-align: center;
   margin-top: 15px;
   font-size: 0.75rem;
-  font-family: var(--font-raleway);
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
 }
 
@@ -682,11 +682,11 @@ header {
   height: 11px;
   display: inline-block;
   margin-right: 10px;
-  background-image: url("../assets/Ckechmark-1.svg");
+  background-image: url("../../../public/assets/Ckechmark-1.svg");
 }
 
 .pricing__item--not::before {
-  background-image: url("../assets/Close.svg");
+  background-image: url("../../../public/assets/Close.svg");
 }
 
 .pricing__box .btn {
@@ -703,7 +703,7 @@ header {
 }
 
 .pricing__box--basic {
-  --accent-color: var(--color-redish);
+  --accent-color: $color-redish;
 }
 
 .pricing__box--basic .pricing__price {
@@ -711,10 +711,10 @@ header {
 }
 
 .pricing__box--professional {
-  --accent-color: var(--color-primary);
+  --accent-color: $color-primary;
   width: 400px;
   margin: 0 40px;
-  box-shadow: 5px 1px 27px var(--color-primary-shadow);
+  box-shadow: 5px 1px 27px rgba(7, 172, 230, 0.16);
 }
 
 .pricing__box--professional .pricing__type {
@@ -726,7 +726,7 @@ header {
 }
 
 .pricing__box--premium {
-  --accent-color: var(--color-green);
+  --accent-color: $color-green;
 }
 
 .btn {
@@ -735,7 +735,7 @@ header {
   font-size: 0.8125rem;
   padding: 16px 57px;
   border-radius: 23px;
-  color: var(--color-white);
+  color: #FFFFFF;
 }
 
 .statistics {

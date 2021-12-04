@@ -17,9 +17,9 @@
 
 .pricing-title {
   text-align: center;
-  color: var(--color-black);
+  color: $color-black;
   font-size: 2rem;
-  font-family: var(--font-raleway);
+  font-family: $font-raleway;
 }
 
 .pricing__box {
@@ -45,13 +45,13 @@
 
 .pricing__type {
   font-size: 1.25rem;
-  font-family: var(--font-raleway);
+  font-family: $font-raleway;
   font-weight: 700;
 }
 
 .pricing__price {
   font-size: 2.875rem;
-  font-family: var(--font-opensans);
+  font-family: $font-opensans;
   font-weight: 300;
   margin-top: 25px;
   color: var(--accent-color);
@@ -61,7 +61,7 @@
   text-align: center;
   margin-top: 15px;
   font-size: 0.75rem;
-  font-family: var(--font-raleway);
+  font-family: $font-raleway;
   font-weight: 700;
 }
 
@@ -80,11 +80,11 @@
   height: 11px;
   display: inline-block;
   margin-right: 10px;
-  background-image: url("../assets/Ckechmark-1.svg");
+  background-image: url("../../../public/assets/Ckechmark-1.svg");
 }
 
 .pricing__item--not::before {
-  background-image: url("../assets/Close.svg");
+  background-image: url("../../../public/assets/Close.svg");
 }
 
 .pricing__box .btn {
@@ -102,7 +102,7 @@
 }
 
 .pricing__box--basic {
-  --accent-color: var(--color-redish);
+  --accent-color: $color-redish;
 }
 
 .pricing__box--basic .pricing__price {
@@ -110,10 +110,10 @@
 }
 
 .pricing__box--professional {
-  --accent-color: var(--color-primary);
+  --accent-color: $color-primary;
   width: 400px;
   margin: 0 40px;
-  box-shadow: 5px 1px 27px var(--color-primary-shadow);
+  box-shadow: 5px 1px 27px $color-primary-shadow;
 }
 
 .pricing__box--professional .pricing__type {
@@ -125,7 +125,7 @@
 }
 
 .pricing__box--premium {
-  --accent-color: var(--color-green);
+  --accent-color: $color-green;
 }
 
 .btn {
@@ -134,5 +134,5 @@
   font-size: 0.8125rem;
   padding: 16px 57px;
   border-radius: 23px;
-  color: var(--color-white)
+  color: $color-white;
 }
