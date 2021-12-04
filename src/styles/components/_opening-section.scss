@@ -19,10 +19,9 @@
   }
 
   .opening-section-btn {
-    //@include buttons;
+    @include buttons;
     display: inline-block;
     margin-top: 38px;
-    color: red;
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
@@ -32,15 +31,16 @@
     border-radius: 2px;
     transition: 2s;
 
-    //&:hover {
-    //  color: $color-primary;
-    //  background-color: $color-white;
-    //  border: 2px solid $color-primary;
-    //}
+    &:hover {
+      color: $color-primary;
+      background-color: $color-white;
+      border: 2px solid $color-primary;
+    }
 
     .opening-section-image {
-      width: 100%;
+      width: 100vw;
       height: auto;
+
     }
   }
 }

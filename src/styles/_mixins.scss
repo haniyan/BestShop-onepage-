@@ -1,14 +1,35 @@
-@mixin mobile {
-  @media (max-width: 1352px){
-    width: 100%;
-    padding: 0 15px; //padding boczny
+
+@mixin notebook {
+  @media (max-width: 1352px) {
     @content;
   }
 }
 
-@mixin buttons{
-  border-radius: 350px;
-}
+
+
+
+
+
+
+
+//@mixin tablet {
+//  @media (min-width: 1352px){
+//    width: 100%;
+//    padding: 0 15px; //padding boczny
+//    @content;
+//  }
+//}
+//
+//@mixin mobile {
+//  @media (max-width: 793px){
+//
+//    @content;
+//  }
+//}
+//
+//@mixin buttons{
+//  border-radius: 350px;
+//}
 
 
 
