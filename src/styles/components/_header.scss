@@ -11,9 +11,6 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    @include tablet {
-      width: 100vw;
-    }
   }
 
   .bar-logo__name {

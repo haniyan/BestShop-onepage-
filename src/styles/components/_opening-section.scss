@@ -1,49 +1,55 @@
-
-.opening-section {
-  width: 100vw;
-  height: 712px;
+.opening-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 130px;
-  text-align: center;
-
-  .opening-section-title {
-    font-family: $font-raleway;
-    font-size: 3.0625rem;
-    letter-spacing: 0;
-    color: $color-black;
-    margin-top: 0;
+  overflow: hidden;
+  @include mobile {
+    margin-top: 100px;
   }
 
-  .opening-section-description {
-    margin-top: 20px;
-    color: $color-black;
-  }
-
-  .opening-section-btn {
-    @include buttons;
-    display: inline-block;
-    margin-top: 38px;
-    font-size: 1rem;
-    font-weight: bold;
+  .opening-section {
+    width: 100vw;
+    height: 712px;
     text-align: center;
-    padding: 22px 157px 23px 157px;
-    background-color: $color-primary;
-    box-shadow: 5px 10px 14px #07ACE629;
-    border-radius: 2px;
-    transition: 2s;
 
-    &:hover {
-      color: $color-primary;
-      background-color: $color-white;
-      border: 2px solid $color-primary;
+    &-title {
+      font-family: $font-raleway;
+      font-size: 3.0625rem;
+      letter-spacing: 0;
+      color: $color-black;
+      margin-top: 0;
+      @include mobile {
+        padding: 0 70px;
+      }
+
     }
 
-    .opening-section-image {
-      width: 100vw;
-      height: auto;
+    &-description {
+      margin-top: 20px;
+      color: $color-black;
+    }
 
+    &-image {
+      width: 100%;
+      height: auto;
+      @include mobile {
+        width: 220%;
+        transform: translateX(-28%);
+      }
+
+
+    }
+    @include mobile {
+      .btn {
+        margin: 0 15px;
+        padding: 16px 0;
+        display: block;
+      }
     }
   }
-}
 
+
+}
 
 

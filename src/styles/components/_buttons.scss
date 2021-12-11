@@ -1,0 +1,43 @@
+.btn {
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  padding: 16px 65px;
+  border-radius: $button-radius;
+  border: none;
+
+
+  &--primary {
+    background-color: $color-primary;
+    border-radius: $button-radius;
+    box-shadow: 3px 10px 14px $color-primary-shadow;
+  }
+
+  &--redish {
+    background-color: $color-redish;
+  }
+
+  &--green {
+    background-color: $color-green;
+  }
+
+  &--large {
+    display: inline-block;
+    margin-top: 38px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 22px 157px 23px 157px;
+    background-color: $color-primary;
+    box-shadow: 5px 10px 14px #07ACE629;
+    border-radius: $button-radius;
+    transition: 2s;
+
+    &:hover {
+
+      color: $color-primary;
+      background-color: $color-white;
+      border: 2px solid $color-primary;
+    }
+  }
+}
