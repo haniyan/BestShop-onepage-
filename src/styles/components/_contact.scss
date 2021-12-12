@@ -5,10 +5,37 @@
   justify-content: center;
   margin-left: 365px;
   margin-right: 365px;
+  @include tablet {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0px;
+    margin: 0;
+  }
+  @include desktop {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px;
+    margin: 0;
+  }
+
 
   .contact-column1 {
     height: 376px;
     width: 50%;
+    @include tablet {
+      width: 100%;
+    }
+    @include desktop {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+    }
+
 
     .contact-title {
       text-align: left;
@@ -18,6 +45,7 @@
       color: $color-black;
       margin-bottom: 22px;
 
+
     }
 
     .contact-description {
@@ -26,14 +54,35 @@
       color: $color-black;
       line-height: 1.375rem;
       margin: 22px 0 42px;
+      @include tablet {
+        margin: 5px 0 35px;
+      }
+
     }
 
     .contact-details {
       display: inline-block;
       margin-top: 42px;
+      flex-wrap: nowrap;
+
+      @include tablet {
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+      }
+      @include desktop {
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+      }
+
 
       .contact-point {
         margin-right: 20px;
+        @include tablet {
+          margin-bottom: 10px;
+        }
+
 
         img {
           margin-right: 10px;
@@ -48,10 +97,27 @@
   .contact-column2 {
     height: 376px;
     width: 50%;
+    @include tablet {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    @include mobile{
+      width: 50%;
+    }
+
 
     .form {
       display: flex;
       flex-direction: column;
+      @include tablet {
+        margin-top: 20px;
+        width: 60%;
+
+      }
+      @include mobile{
+        width: 50%;
+      }
 
       &:first-of-type {
         margin-bottom: 42px;
@@ -132,10 +198,10 @@
 }
 
 
-// w które miejsce to włożyc?
-//.form__checkbox input:checked ~ .checkbox {
-//  background-image: url(../../../public/assets/Checkmark.svg);
-//  background-position: center;
-//  background-size: 50%;
-//  background-repeat: no-repeat;
-//}
+//// w które miejsce to włożyc?
+////.form__checkbox input:checked ~ .checkbox {
+////  background-image: url(../../../public/assets/Checkmark.svg);
+////  background-position: center;
+////  background-size: 50%;
+////  background-repeat: no-repeat;
+////}
