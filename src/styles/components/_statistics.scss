@@ -2,90 +2,104 @@
 .statistics {
   margin-top: 100px;
 
-  .statistics__title {
-    text-align: center;
-    font-size: 2.25rem;
-    font-family: $font-raleway;
-    color: $color-black;
-
+  @include mobile {
+    margin-top: 50px;
   }
 
-  .statistics__container {
-    margin: 100px auto 120px;
+
+  &__title {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  &__container {
     max-width: 800px;
+    margin: 100px auto 120px;
     display: flex;
     justify-content: space-between;
 
-    .statistics-column {
-      max-width: 160px;
+    //nie działa??????????
+    @include mobile {
       display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
+      margin: 35px auto 50px;
       align-items: center;
-      text-align: center;
-      font-family: $font-raleway;
-
-      .statistics__circle {
-        border-radius: 50%;
-        width: 63px;
-        height: 63px;
-        position: relative;
-
-        .statistics__img {
-          position: absolute;
-
-        }
-
-
-      }
-
-      .statistics__number {
-        font-size: 1.25rem;
-        font-weight: bold;
-        letter-spacing: 0.3725rem;
-        color: $color-black;
-        margin-top: 14px;
-      }
-
-      .statistics__description {
-        color: $color-grey;
-        font-size: 1.0625rem;
-        margin-top: 19px;
-      }
-
-      &:nth-child(1) .statistics__circle {
-        background-color: $color-redish;
-      }
-
-      &:nth-child(1) .statistics__img {
-        top: 0;
-        left: 45%;
-      }
-
-      &:nth-child(2) .statistics__circle {
-        background-color: $color-primary;
-      }
-
-      &:nth-child(2) .statistics__img {
-        top: 14px;
-        left: 47%;
-      }
-
-      &:nth-child(3) .statistics__circle {
-        background-color: $color-green;
-      }
-
-      &:nth-child(3) .statistics__img {
-        top: 6px;
-        left: 50%;
-      }
-
+      flex-direction: column;
     }
 
   }
 
+  &__single {
+    max-width: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    font-family: $font-raleway;
 
+    @include mobile {
+      margin-bottom: 35px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &:nth-child(1) {
+      .statistics__circle {
+        background-color: $color-redish;
+      }
+
+      .statistics__img {
+        top: 0;
+        left: 45%;
+      }
+    }
+
+    &:nth-child(2) {
+      .statistics__circle {
+        background-color: $color-primary;
+      }
+
+      .statistics__img {
+        top: 14px;
+        left: 47%;
+      }
+    }
+
+
+    &:nth-child(3) {
+      .statistics__circle {
+        background-color: $color-green;
+      }
+
+      .statistics__img {
+        top: 6px;
+        left: 50%;
+      }
+    }
+  }
+
+  &__circle {
+    border-radius: 50%;
+    width: 63px;
+    height: 63px;
+    position: relative;
+  }
+
+  &__img {
+    position: absolute;
+  }
+
+  &__number {
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: 0.1875rem;
+    margin-top: 13px;
+  }
+
+  &__description {
+    color: $color-grey;
+    margin-top: 19px;
+  }
 }
-
-
-
