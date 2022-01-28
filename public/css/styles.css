@@ -766,11 +766,11 @@ header .menu__item .menu__link:hover {
   height: 11px;
   display: inline-block;
   margin-right: 10px;
-  background-image: url("../../../public/assets/Checkmark-1.svg");
+  background-image: url("../assets/Checkmark-1.svg");
 }
 .pricing__item--not::before {
   content: "";
-  background-image: url("../../../public/assets/Close.svg");
+  background-image: url("../assets/Close.svg");
 }
 
 .statistics {

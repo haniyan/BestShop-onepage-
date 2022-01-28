@@ -27,6 +27,9 @@ function watcher(done) {
     gulp.watch(entryPath + "/**/*.scss", gulp.series(compileSass, reload));
     gulp.watch("./public/*.html", gulp.series(reload));
 
+    //odswiezanie js, obserwujemy katalog js
+    gulp.watch(entryPath + "/js/*.js", gulp.series(reload));
+
     done();
 }
 
